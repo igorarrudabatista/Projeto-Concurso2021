@@ -1,0 +1,23 @@
+version: '3'
+services:
+        firewall:
+                privileged: true
+                build: .
+                image: ubuntu:20.04
+                container_name: firewall
+
+                networks:
+                        - vlan10
+                        - vlan30
+
+                external_links:
+                        - zabbix:zabbix
+                        - proxy-reverso:proxy-reverso
+                tty: true
+networks:
+        vlan10:
+                external:
+                        name: vlan10
+        vlan30:
+                external:
+                        name: vlan30
