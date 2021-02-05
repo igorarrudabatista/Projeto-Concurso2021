@@ -3,6 +3,7 @@ services:
         proxy-reverso:
                 
                 image: nginx:1.12
+                build: ./
                 container_name: proxy-reverso
                 ports:
                         - 8080:80
