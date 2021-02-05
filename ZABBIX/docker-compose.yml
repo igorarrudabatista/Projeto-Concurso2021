@@ -1,0 +1,21 @@
+version: '3'
+services:
+        zabbix:
+                
+                image: zabbix/zabbix-appliance:latest
+                container_name: zabbix
+                ports:
+                        - 8081:80
+                networks:
+                        - vlan30
+                        
+                external_links:
+                        - firewall:firewall
+
+
+
+networks:
+        vlan30:
+                external:
+                        name: vlan30
+        

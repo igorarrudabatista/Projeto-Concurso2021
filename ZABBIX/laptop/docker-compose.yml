@@ -1,0 +1,20 @@
+version: '3'
+services:
+
+        laptop:
+                build: ./
+                image: ubuntu:20.04
+                container_name: laptop
+                networks:
+                        - vlan30
+                        
+                external_links:
+                        - firewall:firewall
+                tty: true          
+
+
+networks:
+        vlan30:
+                external:
+                        name: vlan30
+        
