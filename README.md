@@ -5,7 +5,7 @@ Janeiro /2021
 
 LINK de Vídeo em execução:
 
-https://vimeo.com/user102781272/review/505763557/9fd8866a73
+https://vimeo.com/505763557
 
 INTRODUÇÃO:
 
