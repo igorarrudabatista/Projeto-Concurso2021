@@ -64,6 +64,14 @@ CRIANDO AS VLAN:
   -o parent=enp3s0.30 \
   vlan30
 
+Conectando a VLAN30 nos servidores web:
+	docker network connect vlan30 web_server_01
+	docker network connect vlan30 web_server_02
+	docker network connect vlan20 zabbix
+	
+#####	docker network connect vlan 10
+
+
 ##################
 
 Servidores WEB
